@@ -2,7 +2,7 @@ name: Deploy React
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ poc ]
     types: [opened, synchronize]
 
 jobs:
