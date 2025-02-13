@@ -37,7 +37,7 @@ jobs:
     - name: Deploy to EC2
       env:
         PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
-        HOST: ${{ secrets.EC2_HOST }}
+        HOST: ${{ secrets.EC2_INSTANCE }}
         USER: ${{ secrets.EC2_USER }}
       run: |
         # Crear archivo de clave privada
