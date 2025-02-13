@@ -45,7 +45,7 @@ jobs:
         chmod 600 private_key.pem
         
         # Crear directorio de despliegue si no existe
-        ssh -o StrictHostKeyChecking=no -i private_key.pem $USER@$HOST 'mkdir -p /react-app'
+        ssh -o StrictHostKeyChecking=no -i private_key.pem $USER@$HOST 'mkdir -p react-app'
         
         # Transferir archivos construidos
         scp -o StrictHostKeyChecking=no -i private_key.pem -r build/* $USER@$HOST:react-app
